@@ -108,8 +108,6 @@ Cumulative Steps (Calculated via C Pointers): 57150
 
 ## Author
 
-Harry Eliki
-
 ```
-
+Harry Eliki, Others
 ```
