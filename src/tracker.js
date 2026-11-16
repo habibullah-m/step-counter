@@ -24,26 +24,6 @@ export function validateStepData(rawData) {
 
 export function createGoalFilter(targetSteps) {
   return function (record) {
-    return record.steps >= targetSteps;
+    return record.steps > targetSteps;
   };
-}
-
-// Run standalone test if executed directly (`node src/tracker.js`)
-if (process.argv[1] === import.meta.filename) {
-  const rawInput = [
-    { day: "Monday", steps: 12450 },
-    { day: "Tuesday", steps: 8300 },
-    { day: "Wednesday", steps: "invalid_data" },
-    { day: "Thursday", steps: 15200 },
-    { day: "Friday", steps: 10000 },
-    { day: "Saturday", steps: 6400 },
-    { day: "Sunday", steps: 11200 },
-  ];
-
-  const cleanData = validateStepData(rawInput);
-  const isSuccessfulDay = createGoalFilter(10000);
-  console.log(
-    "Validated & Filtered Successful Days:",
-    cleanData.filter(isSuccessfulDay),
-  );
 }

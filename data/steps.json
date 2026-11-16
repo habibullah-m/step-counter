@@ -1,0 +1,9 @@
+[
+  { "day": "Monday", "steps": 12450 },
+  { "day": "Tuesday", "steps": 8300 },
+  { "day": "Wednesday", "steps": "invalid_data" },
+  { "day": "Thursday", "steps": 15200 },
+  { "day": "Friday", "steps": 10000 },
+  { "day": "Saturday", "steps": 6400 },
+  { "day": "Sunday", "steps": 11200 }
+]
