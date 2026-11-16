@@ -1,0 +1,21 @@
+{
+  "name": "step-counter",
+  "version": "1.0.0",
+  "description": "A hybrid JavaScript (Node.js ES Modules) and C application demonstrating cross-language Foreign Function Interface (FFI) integration. JavaScript handles input sanitization, schema validation, and functional goal filtering via a lexical closure factory (createGoalFilter), while a compiled C dynamic-link library (tracker.dll) traverses contiguous step arrays using pointer arithmetic to compute the cumulative step count for successful days.",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "powershell -ExecutionPolicy Bypass -File ./build.ps1",
+    "start": "node src/main.js",
+    "dev": "npm run build && npm start"
+  },
+  "keywords": [],
+  "author": "Harry Eliki",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "koffi": "^3.3.8"
+  },
+  "allowScripts": {
+    "koffi@3.3.8": true
+  }
+}
