@@ -31,9 +31,7 @@ const totalSteps = calculateCumulativeSteps(
   typedStepArray.length,
 );
 
-console.log(
-  `--- Pipeline Execution Complete (Goal: > ${targetGoal} steps) ---`,
-);
+console.log(`Pipeline Execution Complete (Goal: > ${targetGoal} steps)`);
 console.log(
   "Successful Days:",
   successfulDays.map((d) => `${d.day} (${d.steps})`).join(", "),

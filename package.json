@@ -5,6 +5,7 @@
   "main": "src/main.js",
   "scripts": {
     "build": "powershell -ExecutionPolicy Bypass -File ./build.ps1",
+    "build_m": "powershell -ExecutionPolicy Bypass -File ./build.ps1",
     "start": "node src/main.js",
     "dev": "npm run build && npm start"
   },

@@ -1,7 +1,3 @@
-/**
- * tracker.c - High-Performance Pointer Accumulator
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 

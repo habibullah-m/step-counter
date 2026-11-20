@@ -1,7 +1,3 @@
-/**
- * src/tracker.js - Data Validation and Closure Factory (ESM)
- */
-
 export function validateStepData(rawData) {
   if (!Array.isArray(rawData)) {
     throw new TypeError("Input data must be an array of daily records.");
